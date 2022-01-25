@@ -12,18 +12,18 @@ GameState gameState = GameState::Title_Init;
 
 void setup() {
 
-	arduboy.boot();
-	gameState = GameState::Title_Init; 
+  arduboy.boot();
+  gameState = GameState::Title_Init; 
 
 }
 
 void loop() {
 
-	if (!arduboy.nextFrame()) return;
-	arduboy.pollButtons();
+  if (!arduboy.nextFrame()) return;
+  arduboy.pollButtons();
   arduboy.clear();
 
-	switch (gameState) {
+  switch (gameState) {
 
     case GameState::Title_Init:
       title_Init();
@@ -33,17 +33,17 @@ void loop() {
       title();
       break;
 
-		case GameState::PlayGame_Init: 
+    case GameState::PlayGame_Init: 
       playGame_Init();
       [[fallthrough]]
 
-		case GameState::PlayGame: 
+    case GameState::PlayGame: 
       playGame();
-			break;
+      break;
 
-		default: break;	
+    default: break;  
 
-	}
+  }
 
   arduboy.display();
 
@@ -60,11 +60,11 @@ void title_Init() {
 
 void title() {
 
-	// Handle input ..
+  // Handle input ..
 
-	if (arduboy.justPressed(A_BUTTON)) {
+  if (arduboy.justPressed(A_BUTTON)) {
     gameState = GameState::PlayGame_Init;
-	}
+  }
 
   // Render screen ..
 
@@ -88,11 +88,11 @@ void playGame_Init() {
 
 void playGame() { 
 
-	// Handle input ..
+  // Handle input ..
 
-	if (arduboy.justPressed(A_BUTTON)) {
+  if (arduboy.justPressed(A_BUTTON)) {
     gameState = GameState::Title_Init;
-	}
+  }
 
 
   // Render screen ..

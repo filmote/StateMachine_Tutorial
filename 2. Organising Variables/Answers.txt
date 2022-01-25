@@ -58,11 +58,11 @@ void loop() {
       playGame_Init();
       [[fallthrough]]
 
-	case GameState::PlayGame: 
+    case GameState::PlayGame: 
       playGame();
-	  break;
+      break;
 
-	default: break;	
+    default: break;  
 
   }
 
