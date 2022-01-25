@@ -1,0 +1,7 @@
+"title": "State Machine: Organising Variables",
+"type":"COURSE",
+"summary":"How to organise variables in a state machine",
+"tags":["Intermediate","Game"],
+"durationInMinutes": 5,
+"compileEntryPath":"StateMachine.ino",
+"workFilePath":"ExampleCode/StateMachine.ino"

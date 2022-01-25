@@ -1,0 +1,7 @@
+"title": "State Machine: Create a State Machine",
+"type":"COURSE",
+"summary":"What is a StateMachine and why do I want to build?",
+"tags":["Intermediate","Game"],
+"durationInMinutes": 5,
+"compileEntryPath":"StateMachine.ino",
+"workFilePath":"ExampleCode/StateMachine.ino"
